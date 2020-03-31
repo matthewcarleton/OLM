@@ -167,7 +167,6 @@ ol {
             margin-left: var(--of--spacer--md);
             path {
                 fill: var(--of--color-brand--300);
-
             }
         }
     }
@@ -279,6 +278,80 @@ ol {
         }
     }
     
+}
+
+.of-section-features {
+    padding: var(--of--spacer--lg);
+    &__item {
+        padding-bottom: var(--of--spacer--md);
+        &:nth-of-type(1) {
+            .of-heading {
+                color: var(--of--color-brand--50);
+            }
+        }
+
+        &:nth-of-type(2) {
+            .of-heading {
+                color: var(--of--color-brand--100);
+            }
+        }
+
+        &:nth-of-type(3) {
+            .of-heading {
+                color: var(--of--color-brand--200);
+            }
+        }
+
+        &:nth-of-type(4) {
+            .of-heading {
+                color: var(--of--color-brand--300);
+            }
+        }
+
+        &:nth-of-type(5) {
+            .of-heading {
+                color: var(--of--color-brand--400);
+            }
+        }
+    }
+    @media (min-width: $ov--breakpoint--lg) {
+        padding: var(--of--spacer--2xl) 0 var(--of--spacer--2xl) calc(var(--of--spacer--2xl) + var(--of--spacer--xl));
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // align-content: space-between;
+        .of-heading:first-of-type {
+            grid-column: 1/3;
+        }
+        &__item {
+            padding: var(--of--spacer--3xl);
+            .of-heading {
+                font-size: 1.75rem;
+                margin-bottom: var(--of--spacer--md);
+            }
+            
+            &:not(:first-of-type) {
+                padding-top: 4rem;
+            }
+
+            &:nth-of-type(odd) {
+                text-align: right;
+                border-right: 3px solid var(--of--color-brand--300);
+            }
+           
+            &:nth-of-type(2) {
+                padding-top: 12rem;
+                margin-bottom: -3rem;
+               
+            }
+
+            &:nth-of-type(4) {
+                padding-top: 15rem;
+                margin-bottom: -6rem;   
+            }
+        }
+
+        
+    }
 }
 
 .of-docs-list {
