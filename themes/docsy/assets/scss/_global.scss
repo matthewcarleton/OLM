@@ -162,6 +162,7 @@ ol {
             color: var(--of--color-brand--300);
             text-transform: uppercase;
             font-weight: 800;
+            margin: 0;
         }
         svg {
             margin-left: var(--of--spacer--md);
@@ -328,7 +329,7 @@ ol {
                 font-size: 1.75rem;
                 margin-bottom: var(--of--spacer--md);
             }
-            
+
             &:not(:first-of-type) {
                 padding-top: 4rem;
             }

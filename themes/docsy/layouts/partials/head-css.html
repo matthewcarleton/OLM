@@ -11,6 +11,3 @@
 <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
 <link href="{{ $css.RelPermalink }}" rel="stylesheet" integrity="{{ $css.Data.integrity }}">
 {{ end }}
-{{ $scssDocs := "scss/docs.scss"}}
-{{ $cssDocs := resources.Get $scssDocs | toCSS (dict "enableSourceMap" false) | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $cssDocs.RelPermalink }}" />
