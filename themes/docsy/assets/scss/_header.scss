@@ -25,6 +25,8 @@
         @media (min-width: $ov--breakpoint--lg) {
           &__picture {
             min-width: 177px;
+            display: flex;
+            align-items: center;
           }
             margin: 0 var(--of--spacer--xl);
         }
